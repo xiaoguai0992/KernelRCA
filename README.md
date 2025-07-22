@@ -4,8 +4,6 @@ This is the artifact of the paper "KernelRCA: KernelRCA: Facilitating Root Cause
 
 The dataset used in the paper is also included for the convenience of reproduction.
 
-If you have any questions or need help, please contact us!
-
 This artifact has been tested on Ubuntu 18.04.
 
 ## Setup

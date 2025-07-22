@@ -17,13 +17,10 @@ const props = defineProps({
 
 const isHighlighted = ref(false);
 const onNodeClick = () => {
-  // 通知父组件哪个节点被点击了
   eventBus.emit('node-clicked', { type: 'callNode', id: props.id });
 };
 
-// 监听来自父组件的高亮事件
 eventBus.on('highlight-nodes', (highlightedNodes) => {
-  // 更新高亮状态，判断是否需要高亮
   isHighlighted.value = highlightedNodes.callNodeId === Number(props.id);
 });
 
@@ -48,7 +45,7 @@ const text = computed(() => {
   display: flex;
   width: 100%;
   height: 14px;
-  cursor: pointer; /* 鼠标悬停时变为手型 */
+  cursor: pointer;
 }
 .highlighted {
   background-color: var(--active--color);
@@ -58,7 +55,7 @@ const text = computed(() => {
   padding: 0;
   text-align: left;
   font-size: 14px;
-  transition: background-color 0.1s; /* 添加过渡效果，改变背景时更平滑 */
+  transition: background-color 0.1s;
 }
 .highlighted:hover{
   background-color: var(--cover--bggcolor);
@@ -70,7 +67,7 @@ const text = computed(() => {
   padding: 0;
   text-align: left;
   font-size: 14px;
-  transition: background-color 0.1s; /* 添加过渡效果，改变背景时更平滑 */
+  transition: background-color 0.1s;
 }
 .normal:hover{
   background-color: var(--cover--bggcolor);

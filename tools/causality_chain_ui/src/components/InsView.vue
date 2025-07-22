@@ -171,7 +171,6 @@ const highlightEdgeStyle = {stroke: 'red', strokeWidth: '2px', strokeLinecap: 'r
 const highlightMarkerEnd = {type: MarkerType.ArrowClosed, color: 'red'};
 
 eventBus.on('highlight-nodes', (highlightedNodes) => {
-  // 找到对应的边并高亮
   highlightedEdges.value.forEach(edgeId => {
     const edge = instance.findEdge(edgeId);
     edge.animated = false;
