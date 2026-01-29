@@ -49,7 +49,15 @@ git reset --hard v3.25.0
 ./bootstrap && make -j32 && sudo make install
 ```
 
-5. Setup s2e-env Python environment
+5. Clone Linux kernel repository
+If the `/path/to/KernelRCA/s2e/source/s2e-linux-kernel/linux` in your cloned directory is empty, you need to clone the kernel source manually.
+```
+cd /path/to/KernelRCA/s2e/source/s2e-linux-kernel/
+rm -rf ./linux
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+```
+
+6. Setup s2e-env Python environment
 ```bash
 cd /path/to/your/KernelRCA
 cp -r s2e/source/s2e-env/ ./
@@ -67,19 +75,19 @@ pip uninstall pyelftools -y
 pip install pyelftools==0.29
 ```
 
-6. Build S2E
+7. Build S2E
 ```bash
 cd KernelRCA
 ln -s /path/to/your/KernelRCA/s2e/source/scripts/Makefile s2e/source/Makefile
 s2e build
 ```
 
-7. Configure KernelRCA's environment in KernelRCA/rca/SetupConfig.py
+8. Configure KernelRCA's environment in KernelRCA/rca/SetupConfig.py
 ```python
 S2E_HOME = '/path/to/your/KernelRCA/s2e'
 ```
 
-8. Update user group
+9. Update user group
 ```bash
 sudo usermod -a -G kvm $(whoami)
 sudo usermod -a -G docker $(whoami)
