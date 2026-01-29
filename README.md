@@ -171,7 +171,7 @@ sudo chmod ugo+r /boot/vmlinu\*
 
 3. (Q) Hardware Requirements
 
-    (A) The minimal system requirements are 16 CPU cores with KVM support, 32~GB of RAM, and 200~GB of disk storage. If all cases are to be evaluated, up to 700~GB of disk storage may be required. Some cases, such as \texttt{4b1e841004ca235843fe3dd609a5dda6d3fb9a3d}, may generate hundreds of gigabytes of tracing data and can take a long time to analyze.
+    (A) The minimal system requirements are 16 CPU cores with KVM support, 32 GB of RAM, and 200 GB of disk storage. If all cases are to be evaluated, up to 700 GB of disk storage may be required. Some cases, such as \texttt{4b1e841004ca235843fe3dd609a5dda6d3fb9a3d}, may generate hundreds of gigabytes of tracing data and can take a long time to analyze.
 
 4. (Q) Software Dependencies
 
