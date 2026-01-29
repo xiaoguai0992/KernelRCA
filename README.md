@@ -175,4 +175,4 @@ sudo chmod ugo+r /boot/vmlinu\*
 
 4. (Q) Software Dependencies
 
-    (A) This artifact cannot be executed in a Docker environment. We recommend starting from a clean system installation using the image available at \url{https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso}
+    (A) This artifact cannot be executed in a Docker environment. We recommend starting from a clean system installation using the image available at https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso
