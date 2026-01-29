@@ -169,3 +169,10 @@ sudo chmod ugo+r /boot/vmlinu\*
 
     (A) Install the missing dependencies (according to your environment). Sometimes, just trying again can solve the problem. Sometimes, you need to delete the related s2e/build/<component_name> and s2e/build/stamps/<component_name>-<configure/make/install> and retry.
 
+3. (Q) Hardware Requirements
+
+    (A) The minimal system requirements are 16 CPU cores with KVM support, 32~GB of RAM, and 200~GB of disk storage. If all cases are to be evaluated, up to 700~GB of disk storage may be required. Some cases, such as \texttt{4b1e841004ca235843fe3dd609a5dda6d3fb9a3d}, may generate hundreds of gigabytes of tracing data and can take a long time to analyze.
+
+4. (Q) Software Dependencies
+
+    (A) This artifact cannot be executed in a Docker environment. We recommend starting from a clean system installation using the image available at \url{https://releases.ubuntu.com/18.04/ubuntu-18.04.6-desktop-amd64.iso}
