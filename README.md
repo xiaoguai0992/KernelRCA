@@ -50,6 +50,7 @@ git reset --hard v3.25.0
 ```
 
 5. Clone Linux kernel repository
+
 If the `/path/to/KernelRCA/s2e/source/s2e-linux-kernel/linux` in your cloned directory is empty, you need to clone the kernel source manually.
 ```
 cd /path/to/KernelRCA/s2e/source/s2e-linux-kernel/
