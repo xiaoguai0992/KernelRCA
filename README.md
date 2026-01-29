@@ -72,6 +72,7 @@ pip install wheel
 pip install .
 pip install lief
 pip install angr
+pip install fuzzywuzzy
 pip uninstall pyelftools -y
 pip install pyelftools==0.29
 ```
